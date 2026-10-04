@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Petitguimba</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .photo {
+            width: min(90vw, 600px);
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 10px 0;
+            letter-spacing: 3px;
+        }
+
+        .style {
+            font-size: 20px;
+            color: #ff3333;
+            margin: 15px 0 30px;
+        }
+
+        .bio {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .socials {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: white;
+            background: #181818;
+            border: 1px solid #444;
+            padding: 14px 22px;
+            border-radius: 12px;
+            transition: 0.2s;
+        }
+
+        .socials a:hover {
+            background: #ff2222;
+            border-color: #ff2222;
+            transform: translateY(-2px);
+        }
+
+        /* Bouton Spotify */
+        .spotify {
+            background: #1DB954 !important;
+            border-color: #1DB954 !important;
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .spotify:hover {
+            background: #1ed760 !important;
+            border-color: #1ed760 !important;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            .style {
+                font-size: 18px;
+            }
+
+            .bio {
+                font-size: 16px;
+            }
+
+            .socials {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .socials a {
+                width: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Photo de profil -->
+        <img
+            src="PETITGUIMBA_1600x1600.jpg"
+            alt="Petitguimba"
+            class="photo"
+        >
+
+        <!-- Nom -->
+        <h1>PETITGUIMBA</h1>
+
+        <!-- Style musical -->
+        <div class="style">
+            Hip-Hop • Rap • Trap
+        </div>
+
+        <!-- Présentation -->
+        <p class="bio">
+            Bienvenue sur l'univers de Petitguimba.<br>
+            Retrouvez ici toute son actualité, sa musique et ses réseaux sociaux.
+        </p>
+
+        <!-- Réseaux -->
+        <div class="socials">
+
+            <a
+                href="https://open.spotify.com/artist/2dFjKP0oRrrFZcA87wc2tg"
+                target="_blank"
+                class="spotify"
+            >
+                🎧 Spotify
+            </a>
+
+            <a
+                href="https://instagram.com/ptg_off"
+                target="_blank"
+            >
+                Instagram
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@ptg_off93"
+                target="_blank"
+            >
+                TikTok
+            </a>
+
+            <a
+                href="https://www.snapchat.com/add/ptg_off"
+                target="_blank"
+            >
+                Snapchat
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
